@@ -1,3 +1,5 @@
+import { log } from "@core/utils/log";
+
 type Route = {
   path: string;
 };
@@ -7,6 +9,7 @@ export class Router {
 
   constructor() {
     this.routes = [];
+    log("Router initialized");
   }
 
   addRoute(route: Route) {

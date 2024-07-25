@@ -20,7 +20,12 @@
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+    "baseUrl": ".",
+    "paths": {
+      "@core/*": ["../core/src/*"]
+    }
   },
-  "include": ["src"]
+  "include": ["src", "../core/src"],
+  "references": [{ "path": "../core/tsconfig.json" }]
 }
