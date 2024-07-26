@@ -8,6 +8,10 @@
   "scripts": {
     "eslint:lint": "eslint src --ext ts,tsx --max-warnings 0",
     "lint": "pnpm eslint:lint",
-    "build": "tsc"
+    "build": "tsc -b",
+    "clean": "rm -rf dist && rm -rf .tmp"
+  },
+  "dependencies": {
+    "core": "workspace:*"
   }
 }

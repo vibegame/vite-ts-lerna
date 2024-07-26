@@ -9,7 +9,7 @@ export class Router {
 
   constructor() {
     this.routes = [];
-    log("Router initialized");
+    log("Router sss");
   }
 
   addRoute(route: Route) {
