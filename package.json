@@ -4,7 +4,7 @@
   "scripts": {
     "dev": "lerna run dev --stream",
     "clean": "lerna run clean",
-    "build": "lerna run build --stream --include-dependencies",
+    "build": "lerna run build --stream && lerna run clean",
     "preview": "lerna run preview --stream",
     "lint": "lerna run lint --stream"
   },

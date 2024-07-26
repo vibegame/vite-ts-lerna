@@ -9,7 +9,7 @@
     "eslint:lint": "eslint src --ext ts,tsx --max-warnings 0",
     "lint": "pnpm eslint:lint",
     "build": "tsc -b",
-    "clean": "rm -rf dist && rm -rf .tmp"
+    "clean": "rm -rf dist"
   },
   "dependencies": {
     "core": "workspace:*"
