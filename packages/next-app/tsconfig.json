@@ -32,8 +32,12 @@
     "../sdk/src"
   ],
   "references": [
-    { "path": "../core/tsconfig.json" },
-    { "path": "../sdk/tsconfig.json" }
+    {
+      "path": "../core/tsconfig.json"
+    },
+    {
+      "path": "../sdk/tsconfig.json"
+    }
   ],
   "exclude": ["node_modules"]
 }

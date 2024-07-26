@@ -12,6 +12,10 @@
     "clean": "rm -rf dist"
   },
   "dependencies": {
-    "core": "workspace:*"
+    "core": "workspace:*",
+    "lodash-es": "^4.17.21"
+  },
+  "devDependencies": {
+    "@types/lodash-es": "^4.17.12"
   }
 }
