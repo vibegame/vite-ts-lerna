@@ -19,7 +19,6 @@
     ],
     "paths": {
       "@app/*": ["./src/*"],
-      "@core/*": ["../core/src/*"],
       "@sdk/*": ["../sdk/src/*"]
     }
   },
@@ -28,16 +27,7 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "../core/src",
     "../sdk/src"
-  ],
-  "references": [
-    {
-      "path": "../core/tsconfig.json"
-    },
-    {
-      "path": "../sdk/tsconfig.json"
-    }
   ],
   "exclude": ["node_modules"]
 }

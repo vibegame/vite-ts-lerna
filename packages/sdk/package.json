@@ -5,17 +5,29 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/types/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/cjs/index.js",
+      "import": "./dist/esm/index.js"
+    }
+  },
   "scripts": {
     "eslint:lint": "eslint src --ext ts,tsx --max-warnings 0",
     "lint": "pnpm eslint:lint",
-    "build": "tsc -b",
-    "clean": "rm -rf dist"
+    "build": "rollup -c"
   },
   "dependencies": {
-    "core": "workspace:*",
-    "lodash-es": "^4.17.21"
+    "radash": "^12.1.0"
   },
   "devDependencies": {
-    "@types/lodash-es": "^4.17.12"
+    "@rollup/plugin-commonjs": "^21.1.0",
+    "@rollup/plugin-node-resolve": "^13.3.0",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@rollup/plugin-typescript": "^8.5.0",
+    "rollup": "^2.79.1",
+    "typescript": "^5.2.2"
   }
 }

@@ -1,13 +1,15 @@
 "use client";
-import { Button } from "@core/ui";
-import { Router } from "@sdk/router";
-
-const router = new Router();
+import { sum, subtract, uppercase } from "@sdk/utils";
+import { AppQueryClientProvider, TestQuery } from "@sdk/test";
 
 export default function Home() {
   return (
     <div>
-      <Button>123</Button>
+      <button>{subtract(sum(10, 30), 13)}</button>
+      <AppQueryClientProvider>
+        <TestQuery />
+        <div>{JSON.stringify(uppercase({ name: "Nikita" }))}</div>
+      </AppQueryClientProvider>
     </div>
   );
 }
